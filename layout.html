@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>layout</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script src="./js/main.js"></script>
 	<style type="text/css">
 		.MENU{
 			float: left;
@@ -25,6 +27,18 @@
 
 		.divcontainer{
 			float: left;
+		}
+
+		.table{
+			border-collapse: collapse;
+		}
+
+		.table th{
+			border:0.5px solid gray;
+		}
+
+		.table td{
+			border:0.5px solid gray;
 		}
 
 	</style>
@@ -82,14 +96,55 @@
 				</p>
 			</div>
 		</div>
-
 		<div class="divcontainer">
-			
+			<form action="/filecode" method="get">
+				<input type="text" name="name" placeholder="Ho">
+				<br>
+				<input type="text" name="fullname" placeholder="Ten day du">
+				<br>
+				<input type="number" name="phone" placeholder="So dien Thoai">
+				<br>
+				Nam<input type="radio" name="gioitinh" placeholder="nam"> 
+				Nu<input type="radio" name="gioitinh" placeholder="nu">
+				<br>
+
+				<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+				<input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+				<input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat<br>
+				comment:<textarea rows="5"></textarea> <br>
+				<select>
+					<option>DUC</option>
+					<option>tung</option>
+					<option>kien</option>
+				</select>
+				<br>
+				<input type="text" name=""> <button>timf kiem</button>
+				<button type="submit">GUi</button>
+			</form>
+
+			<table class="table">
+				<tr>
+					<th>STT</th>
+					<th>Ho Ten</th>
+					<th>SDT</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>NguyenVanDuc</td>
+					<td>123123</td>
+				</tr>
+			</table>
+
 		</div>
 	</div>
 
 	<footer>
 		<div style="background-color: gray; height: 50px">footer</div>
 	</footer>
+
+	<script type="text/javascript">
+		fucntion
+	</script>
 </body>
 </html>
