@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script src="./js/main.js"></script>
+	<style type="text/css">
+		.MENU{
+			float: left;
+			width: 100px;
+		}
+
+		#listlink{
+			list-style-type: none;
+			font-size: 20px;
+			padding: 10px;
+			border-right: 1px solid gray;
+		}
+
+		#listlink li{
+			background-color: white;
+		}
+
+		#listlink li:hover{
+			background-color: red;
+		}
+
+		.divcontainer{
+			float: left;
+		}
+
+		.table{
+			border-collapse: collapse;
+		}
+
+		.table th{
+			border:0.5px solid gray;
+		}
+
+		.table td{
+			border:0.5px solid gray;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div style="height: 100px">
+			<!-- top header -->
+			<div style="background-color: white; height: 50px">
+				<div style="float: left;"> <p style="color: gray; font-size: 30px; margin-top: 10px;">Name <span style="color: green">Website</span></p></div>
+				<div style="float: right;"><p>hello cac ban</p></div>
+			</div>
+			<!-- close top header -->
+			<!-- menu -->
+			<div style="background-color: #4CAF50; height: 50px">
+				<div class="MENU"> <p><a href="#" style="text-decoration: none;"> MENU 1</a></p></div>
+				<div class="MENU"> <p><a href="#"> MENU 2</a></p></div>
+				<div class="MENU"> <p><a href="#"> MENU 3</a></p></div>
+				<div class="MENU"> <p><a href="#"> MENU 4</a></p></div>
+			</div>
+			<!-- close menu -->
+		</div>
+	</header>
+	
+	<div class="container" style=" height: 600px">
+		<!-- menuleft -->
+		<div style="width: 200px" class="divcontainer">
+			<ul id="listlink">
+				<li>learn a</li>
+				<li>learn b</li>
+				<li>learn c</li>
+				<li>learn b</li>
+				<li>learn b</li>
+				<li>learn b</li>
+			</ul>
+		</div>
+		<!-- close menu left -->
+		<div style="width: 700px" class="divcontainer">
+			<div>
+				<img src="./img/vietbac.jpg" width="100%">
+			</div>
+			<div style="height: 200px; overflow: scroll;">
+				<p style="text-align: justify;">
+					Ngày 10/7, đại diện VKSND thành phố Hà Nội cho biết đã phê chuẩn quyết định khởi tố ông Lê Thanh Thản về tội Lừa dối khách hàng theo điều 198 Bộ luật hình sự 2015. Ông Thản được tại ngoại trong quá trình điều tra.
+
+					Ông Thản bị Công an Hà Nội cáo buộc liên quan sai phạm của Công ty cổ phần Sản xuất - Xuất nhập khẩu Bemes trong xây dựng dự án nhà ở CT6 ở khu đô thị Kiến Hưng (phường Kiến Hưng, Hà Đông, Hà Nội). "Bước đầu, nhà chức trách mới khởi tố như vậy", lãnh đạo VKSND Hà Nội nói và cho hay cơ quan điều tra đang xem xét điều tra nhiều dự án khác của Tập đoàn Mường Thanh tại Hà Nội.
+
+					Trả lời VnEpxress qua điện thoại, ông Thản nói đang đi công tác ở Phú Quốc (Kiên Giang), chưa biết thông tin bị khởi tố. "Tôi sẽ kiểm tra và thông báo lại sau", ông nói.
+
+					Giữa năm 2015, tập thể cư dân chung cư CT6 Kiến Hưng (phường Kiến Hưng, quận Hà Đông) có đơn kiến nghị gửi HĐND, UBND Hà Nội, Sở Tài Nguyên - Môi trường về việc ở đã 3 năm nhưng không được cấp sổ đỏ. Đây là dự án do Công ty cổ phần Sản xuất - Xuất nhập khẩu Bemes làm chủ đầu tư.
+
+					UBND Hà Nội sau đó có báo cáo và trả lời kiến nghị, cho biết theo Quy hoạch thiết kế, dự án chỉ được duyệt 2 tòa chung cư CT6A và CT6B với 970 căn, trong đó có 936 căn hộ chung cư cao tầng, còn lại là thấp tầng và biệt thự liền kề. Thực tế, chủ đầu tư đã xây thêm tòa CT6C, nâng tổng số căn chung cư không phép là 654 và 4 căn biệt thự liền kề, nhà thấp tầng. Tất cả đã được bán cho khách hàng và đưa vào sử dụng.
+
+					Tại phiên họp HĐND Hà Nội giữa năm 2017, Giám đốc Công an Hà Nội Đoàn Duy Khương cho biết 12 dự án của doanh nghiệp ông Thản triển khai tại Hà Nội đều có dấu hiệu trốn thuế, vi phạm quy định về quản lý nhà ở.
+				</p>
+			</div>
+		</div>
+		<div class="divcontainer">
+			<form action="/filecode" method="get">
+				<input type="text" name="name" placeholder="Ho">
+				<br>
+				<input type="text" name="fullname" placeholder="Ten day du">
+				<br>
+				<input type="number" name="phone" placeholder="So dien Thoai">
+				<br>
+				Nam<input type="radio" name="gioitinh" placeholder="nam"> 
+				Nu<input type="radio" name="gioitinh" placeholder="nu">
+				<br>
+
+				<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+				<input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+				<input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat<br>
+				comment:<textarea rows="5"></textarea> <br>
+				<select>
+					<option>DUC</option>
+					<option>tung</option>
+					<option>kien</option>
+				</select>
+				<br>
+				<input type="text" name=""> <button>timf kiem</button>
+				<button type="submit">GUi</button>
+			</form>
+
+			<table class="table">
+				<tr>
+					<th>STT</th>
+					<th>Ho Ten</th>
+					<th>SDT</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td>NguyenVanDuc</td>
+					<td>123123</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+
+	<footer>
+		<div style="background-color: gray; height: 50px">footer</div>
+	</footer>
+
+	<script type="text/javascript">
+		fucntion
+	</script>
+</body>
+</html>
