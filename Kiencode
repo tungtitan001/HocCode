@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.menu{
+			margin: left;
+			width: 150px;
+			float: left;
+			padding-top: 10px;
+
+
+		}
+		.list li{
+			background-color: white;
+		}
+		.list li: hover{
+			background-color: red;
+		}
+		.list {
+			list-style-type: none;
+			font-size: 25px;
+			padding: 10px;
+			border-right: 1px solid gray;
+		}
+		.divcontainer{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div style="height: 100px">
+			<div style="background-color: white; height: 50px">
+				<div style="float: left;"> <p style="color: blue; font-size: 30px; margin-top: 10px;"> FACE <span style="color: blue;"> BOOK</span></p></div>
+				<div style="float: right; font-size: 25px;"><p> HELLO WORLD </p></div>
+			</div>		
+			<div style="background-color: blue; height: 80px ;">
+				<div class="menu"> <p> <a href="#" style=" text-decoration: none; font-size: 30px;color: yellow"> Bang tin</a> </p></div>
+				<div class="menu"> <p> <a href="#" style="text-decoration: none; color: yellow; font-size: 20px">Loi moi ket ban</a> </p></div>
+				<div class="menu"> <p> <a href="#" style="text-decoration: none; color: yellow; font-size: 20px">Tin nhan</a> </p></div>
+				<div class="menu"> <p> <a href="#" style="text-decoration: none; color: yellow; font-size: 20px">Thong bao</a> </p></div>
+			</div>
+		</header>
+		<div  style=" height: 600px">
+			<div style="width: 200px"  >
+				<ul class="list">
+					<li> Trang ca nhan</li>
+					<li> Nhom</li>
+					<li> Trang</li>
+					<li> Ngay nay nam xua</li>
+					<li> Tro choi</li>
+					<li> Ung dung</li>
+				</ul>	
+			</div>
+			<div style="width: 400px" class="divcontainer">
+				<div> <img src="./anh/abc.jpg " width=30%></div>
+				<div style="height: 200px; overflow: scroll;">
+					<p style="text-align: justify;">
+						Ngày 10/7, đại diện VKSND thành phố Hà Nội cho biết đã phê chuẩn quyết định khởi tố ông Lê Thanh Thản về tội Lừa dối khách hàng theo điều 198 Bộ luật hình sự 2015. Ông Thản được tại ngoại trong quá trình điều tra.
+
+						Ông Thản bị Công an Hà Nội cáo buộc liên quan sai phạm của Công ty cổ phần Sản xuất - Xuất nhập khẩu Bemes trong xây dựng dự án nhà ở CT6 ở khu đô thị Kiến Hưng (phường Kiến Hưng, Hà Đông, Hà Nội). "Bước đầu, nhà chức trách mới khởi tố như vậy", lãnh đạo VKSND Hà Nội nói và cho hay cơ quan điều tra đang xem xét điều tra nhiều dự án khác của Tập đoàn Mường Thanh tại Hà Nội.
+
+						Trả lời VnEpxress qua điện thoại, ông Thản nói đang đi công tác ở Phú Quốc (Kiên Giang), chưa biết thông tin bị khởi tố. "Tôi sẽ kiểm tra và thông báo lại sau", ông nói.
+
+						Giữa năm 2015, tập thể cư dân chung cư CT6 Kiến Hưng (phường Kiến Hưng, quận Hà Đông) có đơn kiến nghị gửi HĐND, UBND Hà Nội, Sở Tài Nguyên - Môi trường về việc ở đã 3 năm nhưng không được cấp sổ đỏ. Đây là dự án do Công ty cổ phần Sản xuất - Xuất nhập khẩu Bemes làm chủ đầu tư.
+
+						UBND Hà Nội sau đó có báo cáo và trả lời kiến nghị, cho biết theo Quy hoạch thiết kế, dự án chỉ được duyệt 2 tòa chung cư CT6A và CT6B với 970 căn, trong đó có 936 căn hộ chung cư cao tầng, còn lại là thấp tầng và biệt thự liền kề. Thực tế, chủ đầu tư đã xây thêm tòa CT6C, nâng tổng số căn chung cư không phép là 654 và 4 căn biệt thự liền kề, nhà thấp tầng. Tất cả đã được bán cho khách hàng và đưa vào sử dụng.
+
+						Tại phiên họp HĐND Hà Nội giữa năm 2017, Giám đốc Công an Hà Nội Đoàn Duy Khương cho biết 12 dự án của doanh nghiệp ông Thản triển khai tại Hà Nội đều có dấu hiệu trốn thuế, vi phạm quy định về quản lý nhà ở.
+					</p>
+				</div>
+			</div>		
+			<footer>
+		<div style="background-color: gray; height: 100px; margin-top: 430px; padding-top: 50px; text-align: center;"> COPYRIGHT</div>
+	</footer>
+
+		</body>
+		</html>
