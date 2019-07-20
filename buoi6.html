@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/buoi6.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<title>buoi 6</title>
+</head>
+<body>
+	<div class="divmain">
+		<input type="file" name="" multiple>
+
+		<div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6775312871587!2d105.8412741142342!3d21.005559593947392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac76ccab6dd7%3A0x55e92a5b07a97d03!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1563278958536!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+		<div>
+			<iframe width="693" height="390" src="https://www.youtube.com/embed/-QKOyzcWuok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+
+	</div>
+
+	<div class="reponsive">
+		
+		<h2>Media Queries</h2>
+		<p>Resize the browser window.</p>
+
+		<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+		<div class="left">
+			<p>Left Menu</p>
+		</div>
+
+		<div class="main">
+			<p>Main Content</p>
+		</div>
+
+		<div class="right">
+			<p>Right Content</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-4">
+			a
+		</div>
+		<div class="col-sm-4">
+			b
+		</div>
+		<div class="col-sm-4">
+			c
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-4">
+			1
+		</div>
+		<div class="col-sm-4">
+			2
+		</div>
+		<div class="col-sm-4">
+			3
+		</div>
+	</div>
+
+	<div id="javascript"></div>
+	<div id="array"></div>
+	<div id="object"></div>
+	<div id="function"></div>
+	<hr>
+	<div id="tong">
+		<!-- TInh Tong -->
+		so thu 1: <input type="text" id="number1" value="1">
+		so thu 2: <input type="text" id="number2" value="2">
+
+		<p>Click the button to change the value of the text field.</p>
+		<p id="myText"></p>
+		<button onclick="tong()">Tong</button>
+
+		<script>
+			function tong() {
+				var number1 = parseInt(document.getElementById("number1").value);  
+				var number2 = parseInt(document.getElementById("number2").value); 
+				tong = number1 + number2;
+
+				document.getElementById("myText").innerHTML = tong;
+			}
+		</script>
+	</div>
+	
+
+</body>
+<script type="text/javascript">
+	var x = 16 + "Volvo";
+	document.getElementById("javascript").innerHTML = x;
+
+//mang
+var cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("array").innerHTML = cars[2];
+
+	//object
+	var person = {
+		firstName : "John",
+		lastName  : "Doe",
+		age     : 50,
+		eyeColor  : "blue",
+		phone: 09633535353,
+
+	};
+
+	document.getElementById("object").innerHTML =
+	person.firstName + " is " + person.age + " years old." + "0" + 	person.phone;
+
+	//function
+	function myFunction(p1, p2) {
+		return p1 * p2;
+	}
+
+	function myFunction2(p1, p2) {
+		return p1 + p2;
+	}
+	x = myFunction(4,5);
+	y = myFunction2(4,5);
+	document.getElementById("function").innerHTML = "tich 2 so la: " + x + "tong 2 so la:" + y ;
+</script>
+</html>
