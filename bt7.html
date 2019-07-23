@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>giai pt bac 2</title>
+</head>
+<body>
+	<div id="ptbac2">
+		<input type="text" id="a" style="width: 20px;" value="">
+		x<sup>2</sup> + 
+		<input type="text" id="b" style="width: 20px;" value="">
+		x +
+		<input type="text" id="c" style="width: 20px;" value="">
+		= 0
+		<br>
+		<br>
+		<button onclick="ptbac2()">GIAI PHUONG TRINH</button>
+		<input type="text" id="timnghiem" style="width: 300px;">
+		<script>
+			function ptbac2() {
+				var a = parseFloat(document.getElementById("a").value);
+				var b = parseFloat(document.getElementById("b").value);
+				var c = parseFloat(document.getElementById("c").value);
+				delta = Math.pow(b,2) - 4*a*c;
+				x = -b/(2*a);
+				y = -c/b;
+				x1 = (-b - Math.sqrt(delta))/(2*a);
+				x2 = (-b + Math.sqrt(delta))/(2*a);
+				if (a == 0){
+					document.getElementById("timnghiem").value = "mot nghiem x = " + y;
+				} else if (delta < 0) {
+					window.alert("Vo nghiem");
+				} else if (delta == 0) {
+					document.getElementById("timnghiem").value = "nghiem kep x1 = x2 = " + x;
+				} else {
+					document.getElementById("timnghiem").value = "x1 = "+ x1 +" va "+"x2 = "+ x2;
+				}
+			}
+		</script>
+	</div>
+</html>
